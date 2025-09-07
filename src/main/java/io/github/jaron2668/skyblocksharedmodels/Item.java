@@ -6,6 +6,7 @@ import java.util.UUID;
 public class Item {
     private UUID uuid;
     private String itemId;
+    private String displayName;
     private String itemBytes;
     private String rarity;
     private List<Enchantment> enchantments;
@@ -26,6 +27,14 @@ public class Item {
 
     public void setItemId(String itemId) {
         this.itemId = itemId;
+    }
+
+    public String getDisplayName() {
+        return itemName;
+    }
+
+    public void setDisplayName(String displayName) {
+        this.itemName = displayName;
     }
 
     public String getItemBytes() {
