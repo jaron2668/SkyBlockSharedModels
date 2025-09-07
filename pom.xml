@@ -11,6 +11,7 @@
 
     <name>Skyblock Shared Models</name>
     <description>A library containing shared model classes</description>
+    <url>https://github.com/jaron2668/SkyblockSharedModels</url>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
