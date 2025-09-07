@@ -30,11 +30,11 @@ public class Item {
     }
 
     public String getDisplayName() {
-        return itemName;
+        return displayName;
     }
 
     public void setDisplayName(String displayName) {
-        this.itemName = displayName;
+        this.displayName = displayName;
     }
 
     public String getItemBytes() {
