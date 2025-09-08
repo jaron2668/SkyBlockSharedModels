@@ -8,6 +8,7 @@ public class Item {
     private String itemId;
     private String displayName;
     private String itemBytes;
+    private int count;
     private String rarity;
     private List<Enchantment> enchantments;
     private List<GemstoneSlot> gemstones;
@@ -43,6 +44,14 @@ public class Item {
 
     public void setItemBytes(String itemBytes) {
         this.itemBytes = itemBytes;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 
     public String getRarity() {
