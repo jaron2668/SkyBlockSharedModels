@@ -19,6 +19,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- JSON annotations for object mapper -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -30,7 +39,45 @@
                     <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
+            <!-- Plugin to generate third-party license file -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>2.0.0</version>
+                <executions>
+                    <execution>
+                        <id>generate-third-party</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>add-third-party</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <outputDirectory>${project.basedir}</outputDirectory>
+                    <thirdPartyFilename>THIRD-PARTY-LICENSES.txt</thirdPartyFilename>
+                    <excludedScopes>test</excludedScopes>
+                </configuration>
+            </plugin>
         </plugins>
+
+        <resources>
+            <!-- add licenses -->
+            <resource>
+                <directory>${project.build.directory}</directory>
+                <includes>
+                    <include>THIRD-PARTY-LICENSES.txt</include>
+                </includes>
+                <targetPath>META-INF/licenses</targetPath>
+            </resource>
+            <resource>
+                <directory>${project.build.directory}</directory>
+                <includes>
+                    <include>LICENSE.txt</include>
+                </includes>
+                <targetPath>META-INF/licenses</targetPath>
+            </resource>
+        </resources>
     </build>
 
 </project>

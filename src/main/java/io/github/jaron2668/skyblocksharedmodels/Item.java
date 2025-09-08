@@ -1,8 +1,24 @@
 package io.github.jaron2668.skyblocksharedmodels;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
 import java.util.List;
 import java.util.UUID;
 
+
+@JsonTypeInfo(
+        use = JsonTypeInfo.Id.NAME,
+        include = JsonTypeInfo.As.PROPERTY,
+        property = "type" // this field will exist in JSON and tells Jackson the class
+)
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = ToolItem.class, name = "tool"),
+        @JsonSubTypes.Type(value = WeaponItem.class, name = "weapon"),
+        @JsonSubTypes.Type(value = ArmorItem.class, name = "armor"),
+        @JsonSubTypes.Type(value = PetItem.class, name = "pet"),
+        @JsonSubTypes.Type(value = Item.class, name = "base")
+})
 public class Item {
     private UUID uuid;
     private String itemId;
