@@ -34,7 +34,7 @@ This library provides common data models used across different microservices to 
 
 ```bash
     mvn clean install
-
+```
 ## 🛑 Disclaimer
 
 > This project is **not affiliated with, endorsed by, or associated with Hypixel Inc.**  
