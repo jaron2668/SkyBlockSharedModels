@@ -1,43 +1,34 @@
-# Shared Models Library
+# SkyBlock Shared Models
 
-A Java library for my Hypixel-Skyblock mod containing shared model classes.
+This library contains the Java model classes shared by the backend services for my Hypixel SkyBlock mod. It defines the objects used when auction and flip data is serialized to or deserialized from Kafka messages.
 
----
+## Contents
 
-## Overview
+The library currently includes models for auctions, items, weapons, tools, armor, pets, enchantments, gemstones, and flips. It is deliberately limited to data models and small model-related utilities; it does not connect to Kafka or PostgreSQL.
 
-This library provides common data models used across different microservices to ensure consistency when serializing and deserializing messages exchanged via Kafka.
+## Requirements
 
----
+-   Java 21
+-   Maven
 
-## Features
+## Build and install
 
-- Java model classes for Kafka message payloads
-- Versioned and published to local Maven repository
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- Java 21
-
-### Build and Install Locally
-
-#### 1. Clone the repository
-
-    git clone https://github.com/jaron2668/SkyblockSharedModels.git
-    cd SkyblockSharedModels
-
-#### 2. Build and install to local Maven repository for other microservices
+The updater and flipper services use this artifact as a local Maven dependency. Run the following command from this directory:
 
 ```bash
-    mvn clean install
+mvn clean install
 ```
-## 🛑 Disclaimer
 
-> This project is **not affiliated with, endorsed by, or associated with Hypixel Inc.**  
-> "Hypixel" and any associated names are trademarks of Hypixel Inc.
->
-> This is an independent, community-created project intended for educational or personal use only.
+The current version is `1.0-SNAPSHOT`, with coordinates:
+
+```text
+io.github.jaron2668:SkyblockSharedModels:1.0-SNAPSHOT
+```
+
+## License
+
+See [LICENSE.txt](LICENSE.txt) and [THIRD-PARTY-LICENSES.txt](THIRD-PARTY-LICENSES.txt).
+
+## Disclaimer
+
+This project is not affiliated with, endorsed by, or associated with Hypixel Inc. "Hypixel" and related names are trademarks of Hypixel Inc. This is an independent community project intended for educational and personal use.

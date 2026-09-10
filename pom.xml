@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.jaron2668</groupId>
-    <artifactId>SkyblockSharedModels</artifactId>
+    <artifactId>SkyBlockSharedModels</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Skyblock Shared Models</name>
+    <name>SkyBlock Shared Models</name>
     <description>A library containing shared model classes</description>
-    <url>https://github.com/jaron2668/SkyblockSharedModels</url>
+    <url>https://github.com/jaron2668/SkyBlockSharedModels</url>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
