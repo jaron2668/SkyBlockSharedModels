@@ -22,12 +22,12 @@ mvn clean install
 The current version is `1.0-SNAPSHOT`, with coordinates:
 
 ```text
-io.github.jaron2668:SkyblockSharedModels:1.0-SNAPSHOT
+io.github.jaron2668:SkyBlockSharedModels:1.0-SNAPSHOT
 ```
 
 ## License
 
-See [LICENSE.txt](LICENSE.txt) and [THIRD-PARTY-LICENSES.txt](THIRD-PARTY-LICENSES.txt).
+See [LICENSE.txt](LICENSE.txt).
 
 ## Disclaimer
 
