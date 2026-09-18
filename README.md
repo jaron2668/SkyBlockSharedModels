@@ -1,5 +1,5 @@
 ![Java Version](https://img.shields.io/badge/Java-21+-orange)
-![Build](https://github.com/jaron2668/SkyBlockSharedModels/actions/workflows/ci.yml/badge.svg)
+![Build](https://github.com/jaron2668/SkyBlockSharedModels/actions/workflows/build.yml/badge.svg)
 ![Release](https://img.shields.io/github/v/release/jaron2668/SkyBlockSharedModels)
 ![License](https://img.shields.io/badge/License-GPLv3--only-blue)
 
