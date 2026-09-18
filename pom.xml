@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.jaron2668</groupId>
-    <artifactId>SkyBlockSharedModels</artifactId>
+    <artifactId>skyblock-shared-models</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -93,5 +93,14 @@
             </resource>
         </resources>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/jaron2668/SkyBlockSharedModels</url>
+        </repository>
+    </distributionManagement>
+
 
 </project>
