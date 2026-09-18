@@ -1,3 +1,8 @@
+![Java Version](https://img.shields.io/badge/Java-21+-orange)
+![Build](https://github.com/jaron2668/SkyBlockSharedModels/actions/workflows/ci.yml/badge.svg)
+![Release](https://img.shields.io/github/v/release/jaron2668/SkyBlockSharedModels)
+![License](https://img.shields.io/badge/License-GPLv3--only-blue)
+
 # SkyBlock Shared Models
 
 This library contains the Java model classes shared by the backend services for my Hypixel SkyBlock mod. It defines the objects used when auction and flip data is serialized to or deserialized from Kafka messages.
