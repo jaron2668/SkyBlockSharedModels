@@ -6,7 +6,7 @@
 
     <groupId>io.github.jaron2668</groupId>
     <artifactId>skyblock-shared-models</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>SkyBlock Shared Models</name>
@@ -18,6 +18,14 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License v3.0 only</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <dependencies>
         <!-- JSON annotations for object mapper -->
@@ -55,7 +63,7 @@
                 </executions>
                 <configuration>
                     <outputDirectory>${project.build.directory}/generated-resources</outputDirectory>
-                    <thirdPartyFilename>THIRD-PARTY-LICENSES.txt</thirdPartyFilename>
+                    <thirdPartyFilename>THIRD-PARTY-NOTICES.txt</thirdPartyFilename>
                     <excludedScopes>test</excludedScopes>
                 </configuration>
             </plugin>
@@ -87,7 +95,7 @@
             <resource>
                 <directory>${project.build.directory}/generated-resources</directory>
                 <includes>
-                    <include>THIRD-PARTY-LICENSES.txt</include>
+                    <include>THIRD-PARTY-NOTICES.txt</include>
                 </includes>
                 <targetPath>.</targetPath>
             </resource>

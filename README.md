@@ -19,10 +19,10 @@ The updater and flipper services use this artifact as a local Maven dependency. 
 mvn clean install
 ```
 
-The current version is `1.0-SNAPSHOT`, with coordinates:
+The current version is `1.0.0`, with coordinates:
 
 ```text
-io.github.jaron2668:SkyBlockSharedModels:1.0-SNAPSHOT
+io.github.jaron2668:skyblock-shared-models:1.0.0
 ```
 
 ## License
