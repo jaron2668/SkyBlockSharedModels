@@ -30,6 +30,29 @@ Consumers resolve the artifact from:
 https://maven.pkg.github.com/jaron2668/SkyBlockSharedModels
 ```
 
+> This requires a ~/.m2/settings.xml for GitHub Authentication
+
+or from JitPack using:
+
+```text
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+
+    <dependencies>
+        <!-- Shared Model Classes -->
+        <dependency>
+            <groupId>com.github.jaron2668</groupId> <!-- jitpack ground and artifact id is different from pom groupid -->
+            <artifactId>SkyBlockSharedModels</artifactId>
+            <version>v1.0.0</version> <!-- jitpack uses github tags as versions, thats why 'v' is included -->
+        </dependency>
+    </dependencies>
+```
+
 To build the library locally:
 
 ```text
