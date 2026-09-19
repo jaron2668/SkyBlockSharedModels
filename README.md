@@ -18,16 +18,22 @@ The library currently includes models for auctions, items, weapons, tools, armor
 
 ## Build and install
 
-The updater and flipper services use this artifact as a local Maven dependency. Run the following command from this directory:
+This library is published to GitHub Packages and consumed by the updater, flipper, and Fabric mod projects as a Maven dependency. Its coordinates are:
 
 ```bash
-mvn clean install
+io.github.jaron2668:skyblock-shared-models:1.0.0
 ```
 
-The current version is `1.0.0`, with coordinates:
+Consumers resolve the artifact from:
 
 ```text
-io.github.jaron2668:skyblock-shared-models:1.0.0
+https://maven.pkg.github.com/jaron2668/SkyBlockSharedModels
+```
+
+To build the library locally:
+
+```text
+mvn clean verify
 ```
 
 ## License
