@@ -24,10 +24,30 @@ This library is published to GitHub Packages and consumed by the updater, flippe
 io.github.jaron2668:skyblock-shared-models:1.0.0
 ```
 
-Consumers resolve the artifact from:
+Consumers resolve the artifact from
 
 ```text
 https://maven.pkg.github.com/jaron2668/SkyBlockSharedModels
+```
+
+using
+
+```text
+    <repositories>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/jaron2668/SkyBlockSharedModels</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- Shared Model Classes -->
+        <dependency>
+            <groupId>io.github.jaron2668</groupId>
+            <artifactId>skyblock-shared-models</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
 ```
 
 > This requires a ~/.m2/settings.xml for GitHub Authentication
